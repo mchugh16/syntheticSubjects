@@ -11,7 +11,7 @@ def split_data(group, split, source, destination):
 
     # do a check to make sure total num of images in split matches actual num
     ideal_total_num = num_real + num_syn + num_val
-    images = os.listdir(full_source)
+    images = os.listdir(full_sourcecs)
     if ideal_total_num != len(images):
         raise ValueError('Num Images in Splits Do Not Match Actual Num Images')
     print("passed 1st check")

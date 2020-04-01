@@ -77,8 +77,8 @@ def get_gender_race_totals():
             }
 
 
-            seasion_m = {
-                "gender_race":"seasion_m",
+            seasian_m = {
+                "gender_race":"seasian_m",
                 "total": 0,
                 "frontal_detected": 0,
                 "profile_detected": 0,
@@ -86,8 +86,8 @@ def get_gender_race_totals():
             }
 
             
-            seasion_f = {
-                "gender_race":"seasion_f",
+            seasian_f = {
+                "gender_race":"seasian_f",
                 "total": 0,
                 "frontal_detected": 0,
                 "profile_detected": 0,
@@ -95,8 +95,8 @@ def get_gender_race_totals():
             }
 
         
-            easion_m = {
-                "gender_race":"easion_m",
+            easian_m = {
+                "gender_race":"easian_m",
                 "total": 0,
                 "frontal_detected": 0,
                 "profile_detected": 0,
@@ -104,8 +104,8 @@ def get_gender_race_totals():
             }
 
            
-            easion_f = {
-                "gender_race":"easion_f",
+            easian_f = {
+                "gender_race":"easian_f",
                 "total": 0,
                 "frontal_detected": 0,
                 "profile_detected": 0,
@@ -208,37 +208,37 @@ def get_gender_race_totals():
                     elif profile_detected:
                         indian_f["profile_detected"] += 1
                 elif ((race == "Southeast Asian") and (gender == "Male")):
-                    seasion_m["total"] += 1
+                    seasian_m["total"] += 1
                     if face_detected and profile_detected:
-                        seasion_m["both_detected"] += 1
+                        seasian_m["both_detected"] += 1
                     elif face_detected:
-                        seasion_m["frontal_detected"] += 1
+                        seasian_m["frontal_detected"] += 1
                     elif profile_detected:
-                        seasion_m["profile_detected"] += 1
+                        seasian_m["profile_detected"] += 1
                 elif ((race == "Southeast Asian") and (gender == "Female")):
-                    seasion_f["total"] += 1
+                    seasian_f["total"] += 1
                     if face_detected and profile_detected:
-                        seasion_f["both_detected"] += 1
+                        seasian_f["both_detected"] += 1
                     elif face_detected:
-                        seasion_f["frontal_detected"] += 1
+                        seasian_f["frontal_detected"] += 1
                     elif profile_detected:
-                        seasion_f["profile_detected"] += 1
+                        seasian_f["profile_detected"] += 1
                 elif ((race == "East Asian") and (gender == "Male")):
-                    easion_m["total"] += 1
+                    easian_m["total"] += 1
                     if face_detected and profile_detected:
-                        easion_m["both_detected"] += 1
+                        easian_m["both_detected"] += 1
                     elif face_detected:
-                        easion_m["frontal_detected"] += 1
+                        easian_m["frontal_detected"] += 1
                     elif profile_detected:
-                        easion_m["profile_detected"] += 1
+                        easian_m["profile_detected"] += 1
                 elif ((race == "East Asian") and (gender == "Female")):
-                    easion_f["total"] += 1
+                    easian_f["total"] += 1
                     if face_detected and profile_detected:
-                        easion_f["both_detected"] += 1
+                        easian_f["both_detected"] += 1
                     elif face_detected:
-                        easion_f["frontal_detected"] += 1
+                        easian_f["frontal_detected"] += 1
                     elif profile_detected:
-                        easion_f["profile_detected"] += 1
+                        easian_f["profile_detected"] += 1
                 elif ((race == "Latino_Hispanic") and (gender == "Male")):
                     latino_m["total"] += 1
                     if face_detected and profile_detected:
@@ -265,10 +265,10 @@ def get_gender_race_totals():
                 'mide_f': mide_f,
                 'indian_m':indian_m,
                 'indian_f': indian_f,
-                'seasion_m': seasion_m,
-                'seasion_f': seasion_f,
-                'easion_m': easion_m,
-                'easion_f': easion_f,
+                'seasian_m': seasian_m,
+                'seasian_f': seasian_f,
+                'easian_m': easian_m,
+                'easian_f': easian_f,
                 'latino_m': latino_m,
                 'latino_f': latino_f
             }
